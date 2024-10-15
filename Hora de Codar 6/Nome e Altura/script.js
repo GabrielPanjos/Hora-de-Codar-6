@@ -62,7 +62,37 @@ function cadastrar() {
 function apresentar() {
     alert("Apresentando registror")
 
+    let escolha = parseInt(prompt(`Escolha uma opção \n 1.) Apresentar menores ou iguais a 1.5m \n 2.) Apresentar maiores que 1.5m \n 3.) Apresentar maiores que 1.5m e menores que 2.0m.`))
 
+    switch (escolha) {
+
+        case 1:
+            menores()
+            break
+        case 2:
+            maiores()
+            break
+        case 3:
+            medio()
+            break
+        default:
+            alert('Por favor, informe um número entre 1 e 3');
+            apresentar()
+            break
+    }
+
+    // Funções
+    function menores() {
+
+    }
+
+    function maiores() {
+
+    }
+
+    function medio() {
+
+    }
 
 }
 
